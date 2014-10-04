@@ -1,3 +1,4 @@
+require "rails_helper"
 # Feature: Home page
 #   As a visitor
 #   I want to visit a home page
@@ -10,7 +11,9 @@ feature 'Home page' do
   #   Then I see "Welcome"
   scenario 'visit the home page' do
     visit root_path
-    expect(page).to have_content 'Welcome'
+    expect(page).to have_content 'Reverse string'
+    expect(page).to have_content 'Factorial'
+    expect(page).to have_content 'Prime'
+    expect(page).to have_content 'Run length'
   end
-
 end
