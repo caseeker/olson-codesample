@@ -14,9 +14,15 @@ This application requires:
 
 - Ruby 2.1.2
 - Rails 4.1.6
+- Vagrant (1.6.5)
+- Virtual-box
 
 Getting Started
 ---------------
+    vagrant up to initialize vagrant environment, ubuntu 14.04 box is used.
+    bundle install to install rails and required ruby gems
+    bundle exec rspec will run the test
+    bundle exec rails s to start the application.
 
 Documentation and Support
 -------------------------
