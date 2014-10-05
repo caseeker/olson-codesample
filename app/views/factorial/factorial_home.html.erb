@@ -1,0 +1,8 @@
+Return factorial of input number
+<%= form_tag('/factorial',  method: 'get') do %>
+    <%= label_tag('Factorial input:') %>
+    <%= number_field_tag(:factorial_input) %>
+    <%= submit_tag('Submit') %>
+<% end %>
+<%= label_tag('Factorial output:') %>
+<%= @factorial_output %>

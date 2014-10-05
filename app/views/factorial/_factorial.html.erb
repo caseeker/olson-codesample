@@ -1,0 +1,8 @@
+<%= form_tag('/factorial', remote: true,  method: 'get') do %>
+    <%= label_tag('Factorial input:') %>
+    <%= text_field_tag(:factorial_input) %>
+    <%= submit_tag('Submit') %>
+<% end %>
+
+<div id="factorial_output">
+</div>
