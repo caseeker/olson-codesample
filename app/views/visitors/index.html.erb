@@ -1,9 +1,3 @@
 <h3>This is samplecode from Sungho Park for Olson</h3>
 
-<%= form_tag('/reverse',  method: 'get') do %>
-    <%= label_tag('Reverse String:') %>
-    <%= text_field_tag(:reverse_string) %>
-    <%= submit_tag('Reverse!') %>
-<% end %>
-<%= label_tag('Reverse Output:') %>
-<%= @reverse_string %>
+<%= render 'reverse/reverse' %>

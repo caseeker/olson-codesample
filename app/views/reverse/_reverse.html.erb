@@ -1,9 +1,8 @@
-Reverse input string
-
-<%= form_tag('/reverse',  method: 'get') do %>
+<%= form_tag('/reverse', remote: true,  method: 'get') do %>
     <%= label_tag('Reverse String:') %>
     <%= text_field_tag(:reverse_string) %>
     <%= submit_tag('Reverse!') %>
 <% end %>
-<%= label_tag('Reverse Output:') %>
-<%= @reverse_string %>
+
+<div id="reverse_output">
+</div>
