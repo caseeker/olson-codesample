@@ -1,0 +1,8 @@
+Return prime of input number
+<%= form_tag('/prime',  method: 'get') do %>
+    <%= label_tag('Prime input:') %>
+    <%= number_field_tag(:prime_input) %>
+    <%= submit_tag('Submit') %>
+<% end %>
+<%= label_tag('Prime output:') %>
+<%= @prime_output %>
