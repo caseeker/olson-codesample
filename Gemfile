@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'high_voltage'
+gem 'thin'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -30,7 +31,6 @@ group :development, :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 group :test do
