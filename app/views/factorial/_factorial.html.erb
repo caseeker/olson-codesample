@@ -1,6 +1,6 @@
 <%= form_tag('/factorial', remote: true,  method: 'get') do %>
     <%= label_tag('Factorial input:') %>
-    <%= text_field_tag(:factorial_input) %>
+    <%= number_field_tag(:factorial_input, nil, max: 1000) %>
     <%= submit_tag('Submit') %>
 <% end %>
 

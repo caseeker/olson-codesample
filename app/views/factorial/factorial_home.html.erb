@@ -1,7 +1,7 @@
 Return factorial of input number
 <%= form_tag('/factorial',  method: 'get') do %>
     <%= label_tag('Factorial input:') %>
-    <%= number_field_tag(:factorial_input) %>
+    <%= number_field_tag(:factorial_input, nil, max: 1000) %>
     <%= submit_tag('Submit') %>
 <% end %>
 <%= label_tag('Factorial output:') %>

@@ -4,7 +4,6 @@ class FactorialController < ApplicationController
       render :factorial_home
     else
       factorial_input = params[:factorial_input].to_i
-
       @factorial_output = (1..factorial_input).inject(:*) || 1
       respond_to do |format|
         format.json { render json: @factorial_output }

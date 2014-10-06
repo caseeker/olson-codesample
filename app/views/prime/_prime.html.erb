@@ -1,6 +1,6 @@
 <%= form_tag('/prime', remote: true,  method: 'get') do %>
     <%= label_tag('Prime input:') %>
-    <%= text_field_tag(:prime_input) %>
+    <%= number_field_tag(:prime_input) %>
     <%= submit_tag('Submit') %>
 <% end %>
 
