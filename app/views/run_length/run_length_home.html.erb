@@ -1,0 +1,8 @@
+Calculate Run length of the input string
+<%= form_tag('/run_length',  method: 'get') do %>
+    <%= label_tag('Run length input:') %>
+    <%= text_field_tag(:run_length_input) %>
+    <%= submit_tag('Submit') %>
+<% end %>
+<%= label_tag('Run length output:') %>
+<%= @run_length_output %>

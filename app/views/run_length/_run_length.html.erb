@@ -1,0 +1,8 @@
+<%= form_tag('/run_length', remote: true,  method: 'get') do %>
+    <%= label_tag('Run length input:') %>
+    <%= text_field_tag(:run_length_input) %>
+    <%= submit_tag('Submit') %>
+<% end %>
+
+<div id="run_length_output">
+</div>
